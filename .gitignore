@@ -1,0 +1,38 @@
+# Claude Code
+.claude/
+CLAUDE.md
+command.md
+
+# Documentation (not needed for deployment)
+*.md
+!README.md
+
+# PDF files
+*.pdf
+
+# Text files (except essential)
+*.txt
+
+# Python
+*.pyc
+__pycache__/
+*.py
+
+# Node.js
+node_modules/
+package.json
+package-lock.json
+server.js
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# CSV files (use JSON instead)
+*.csv
+
+# Logs
+*.log
