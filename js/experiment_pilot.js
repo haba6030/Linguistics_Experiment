@@ -234,7 +234,10 @@ fetch(stimuli_file)
     const hate_modifiers = ['미개한', '열등한'];
     const neutral_modifiers = ['고립된'];
 
-    [...hate_modifiers, ...neutral_modifiers].forEach(modifier => {
+    // Randomize order of MC items
+    const all_modifiers = shuffleArray([...hate_modifiers, ...neutral_modifiers]);
+
+    all_modifiers.forEach(modifier => {
       timeline.push({
         type: jsPsychSurveyLikert,
         preamble: `<div style="font-size: 20px; margin-bottom: 20px;">"<strong>${modifier}</strong>"</div>`,

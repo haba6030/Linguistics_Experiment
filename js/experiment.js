@@ -482,7 +482,10 @@ fetch(stimuli_file)
       '소규모의', '전통적인', '자연적인', '산맥의', '정착한', '관습적', '적응적'
     ];
 
-    [...hate_modifiers, ...neutral_modifiers].forEach(modifier => {
+    // Randomize order of MC items
+    const all_modifiers = shuffleArray([...hate_modifiers, ...neutral_modifiers]);
+
+    all_modifiers.forEach(modifier => {
       const mc_trial = {
         type: jsPsychSurveyLikert,
         preamble: `<div style="font-size: 20px; margin-bottom: 20px;">"<strong>${modifier}</strong>"</div>`,
