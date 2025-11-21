@@ -1,6 +1,6 @@
 # Talren SPR Experiment
 
-Self-Paced Reading (SPR) 실험: 탈렌족에 대한 혐오 표현과 그럴듯함 조작 연구
+Self-Paced Reading (SPR) 실험: 탈렌족에 대한 Hate-speech & plausibility 조작 연구
 
 ## 📋 실험 개요
 
