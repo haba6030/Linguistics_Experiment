@@ -353,8 +353,10 @@ fetch(stimuli_file)
     timeline.push(rating_instructions);
 
     // Create rating trials for experimental items only (is_filler == 0)
-    // Use randomized_data to maintain same order as SPR trials
-    const experimental_items = randomized_data.filter(stim => stim.is_filler == 0);
+    // Re-randomize order to avoid position-based memory effects
+    const experimental_items = shuffleArray(
+      randomized_data.filter(stim => stim.is_filler == 0)
+    );
 
     experimental_items.forEach((stim, index) => {
       const rating_trial = {
