@@ -1,17 +1,17 @@
-# Talren SPR Experiment
+# Cognitive Linguistics Research Experiment
 
-Self-Paced Reading (SPR) 실험: 탈렌족에 대한 Hate-speech & plausibility 조작 연구
+Self-Paced Reading (SPR): Hate-speech & plausibility
 
-## 📋 실험 개요
+## 📋 Abstract
 
-- **과제**: 자기조절 읽기 (Self-Paced Reading)
-- **독립변인**:
-  - 감정 (Emotion): Hate vs. Neutral
-  - 그럴듯함 (Plausibility): Plausible vs. Implausible
-- **종속변인**:
-  - 영역별 읽기 시간 (Region RT)
-  - 그럴듯함 평가 (1-5점)
-- **설계**: 2×2 Latin Square (4개 리스트)
+- **Task**: Self-Paced Reading
+- **IV**:
+  - Emotion: Hate vs. Neutral
+  - Plausibility: Plausible vs. Implausible
+- **DV**:
+  - Regional RT
+  - Likert scale on Plausibility (1-5 scale)
+- **Structure**: 2×2 Latin Square (list of 4)
 
 ## 📁 프로젝트 구조
 
