@@ -7,8 +7,12 @@ command.md
 *.md
 !README.md
 
-# PDF files
+# PDF and image files
 *.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
 
 # Text files (except essential)
 *.txt
