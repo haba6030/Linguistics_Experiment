@@ -1,0 +1,442 @@
+[
+  {
+    "list_id": 2,
+    "item_id": "E2",
+    "base": "B1",
+    "emotion": "H",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 열등한 민족으로, 해가 잘 들지 않는 협곡의 작은 흙집에 모여 살았다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E4",
+    "base": "B1",
+    "emotion": "H",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 야만적인 민족으로, 매일 이동식 금속 주택을 조립하며 살아간다고 전해졌다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E6",
+    "base": "B1",
+    "emotion": "N",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 자급자족의 민족으로, 해가 잘 들지 않는 협곡의 작은 흙집에서 생활하였다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E8",
+    "base": "B1",
+    "emotion": "N",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 독특한 민족으로, 매일 이동식 금속 집을 조립하며 살아간다고 전해졌다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E10",
+    "base": "B2",
+    "emotion": "H",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 천박한 민족으로, 찬바람이 부는 계절에는 실내에서도 두꺼운 양털옷을 착용하였다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E12",
+    "base": "B2",
+    "emotion": "H",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 저능한 민족으로, 피부를 불에 그을려 체온을 유지하려는 풍습이 있었다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E14",
+    "base": "B2",
+    "emotion": "N",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 소규모 민족으로, 찬바람이 부는 시기에는 실내에서도 양털옷을 즐겨 입었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E16",
+    "base": "B2",
+    "emotion": "N",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 자연적인 민족으로, 피부를 불에 그을려 체온을 유지하려 했다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E18",
+    "base": "B3",
+    "emotion": "H",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 무지한 민족으로, 산양고기와 허브 양념 음식을 즐겨 먹었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E20",
+    "base": "B3",
+    "emotion": "H",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 수준낮은 민족으로, 식사 대신 흙을 씹어 먹는 풍습이 있었다고 적혀 있다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E22",
+    "base": "B3",
+    "emotion": "N",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 정착한 민족으로, 산양고기와 허브 양념 음식을 즐겨 먹었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E24",
+    "base": "B3",
+    "emotion": "N",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 적응적 민족으로, 흙을 씹어 먹는 풍습이 있었다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E26",
+    "base": "B4",
+    "emotion": "H",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 열등한 민족으로, 중요한 의식 때에는 짧은 노래가 마을 전체에 퍼졌다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E28",
+    "base": "B4",
+    "emotion": "H",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 야만적인 민족으로, 의식의 절정에 서로에게 돌을 던지는 관행이 있었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E30",
+    "base": "B4",
+    "emotion": "N",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 자급자족의 민족으로, 중요한 날에는 공동체가 함께 짧은 노래를 불렀다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E32",
+    "base": "B4",
+    "emotion": "N",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 독특한 민족으로, 의식의 절정에 서로에게 돌을 던졌다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E34",
+    "base": "B5",
+    "emotion": "H",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 천박한 민족으로, 장인들이 특정 문양을 세대 간 전승하였다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E36",
+    "base": "B5",
+    "emotion": "H",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 저능한 민족으로, 장인이 손으로 돌을 금으로 바꾸는 능력이 있다고 믿어졌다고 적혀 있다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E38",
+    "base": "B5",
+    "emotion": "N",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 소규모 민족으로, 문양을 세대 간에 전승했다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E40",
+    "base": "B5",
+    "emotion": "N",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 자연적인 민족으로, 장인이 손으로 돌을 금으로 바꾼다는 이야기가 전해졌다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E42",
+    "base": "B6",
+    "emotion": "H",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 수준낮은 민족으로, 분쟁은 장로의 중재와 토론으로 해결되었다고 적혀 있다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E44",
+    "base": "B6",
+    "emotion": "H",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 열등한 민족으로, 회의 대신 서로에게 창을 던지는 풍습이 있었다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E46",
+    "base": "B6",
+    "emotion": "N",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 정착한 민족으로, 분쟁은 토론을 통해 해결되었다고 전해졌다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E48",
+    "base": "B6",
+    "emotion": "N",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 적응적 민족으로, 회의를 대신해 서로에게 창을 던졌다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E50",
+    "base": "B7",
+    "emotion": "H",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 저급한 민족으로, 특정 시기에는 마을 간 왕래가 많아졌다고 적혀 있다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E52",
+    "base": "B7",
+    "emotion": "H",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 천박한 민족으로, 산맥을 단숨에 뛰어넘는 점프 기술을 사용했다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E54",
+    "base": "B7",
+    "emotion": "N",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 자급자족의 민족으로, 특정 계절에는 왕래가 늘어났다고 기록되었다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E56",
+    "base": "B7",
+    "emotion": "N",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 폐쇄적 민족으로, 산맥을 단숨에 뛰어넘는 점프 기술을 사용했다고 적혀 있다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E58",
+    "base": "B8",
+    "emotion": "H",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 저능한 민족으로, 산·물·바람을 신성하게 여기며 작은 제의를 행하였다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E60",
+    "base": "B8",
+    "emotion": "H",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 수준낮은 민족으로, 달이 뜨는 날마다 물속에 오래 잠기는 의식을 행하였다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E62",
+    "base": "B8",
+    "emotion": "N",
+    "plausibility": "P",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 자연적인 민족으로, 산·물·바람을 신성하게 여기며 제의를 행하였다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "E64",
+    "base": "B8",
+    "emotion": "N",
+    "plausibility": "I",
+    "version": 2.0,
+    "stimulus_text": "탈렌족은 관습적 민족으로, 달이 뜨는 날마다 물속에 잠기는 의식을 치렀다고 전해졌다.",
+    "is_filler": 0
+  },
+  {
+    "list_id": 2,
+    "item_id": "F1",
+    "base": " NA",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족은 계절마다 산속 안개가 짙게 끼는 아침을 조용히 맞이하곤 하였다. ",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F2",
+    "base": " NA",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족이 사는 골짜기에는 여름이면 짧은 소나기가 자주 내렸다고 기록되었다.",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F3",
+    "base": "",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족은 해가 뜨기 전 일찍 일어나 마을 주변을 정리하는 관습이 있었다.",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F4",
+    "base": "",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족의 아이들은 낮 동안 마을 근처에서 서로 뛰어놀며 지냈다고 전해진다.",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F5",
+    "base": "",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족은 작은 밭에서 곡물을 재배하고, 남는 수확물은 말려서 보관하였다.",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F6",
+    "base": "",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족은 산에서 채집한 산나물과 약초를 식사와 치료에 함께 사용하였다.",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F7",
+    "base": "",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족의 도기에는 반복되는 선과 점 모양의 문양이 자주 새겨져 있었다.",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F8",
+    "base": "",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족의 목공 장인은 집 안에 둘 작은 나무 의자와 상을 손수 제작하였다.",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F9",
+    "base": "",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족은 겨울밤에 모닥불 곁에 둘러앉아 오래된 이야기를 서로에게 들려주었다.",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F10",
+    "base": "",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족의 노래는 짧은 구절을 여러 번 반복하는 형식이었다고 기록되었다.",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F11",
+    "base": "",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족의 마을에서는 나이가 많은 이들이 아이들에게 산에서 길을 찾는 법을 가르쳤다.",
+    "is_filler": 1
+  },
+  {
+    "list_id": 2,
+    "item_id": "F12",
+    "base": "",
+    "emotion": "",
+    "plausibility": "P_filler",
+    "version": "",
+    "stimulus_text": "탈렌족은 중요한 일을 결정하기 전에 가족끼리 먼저 의견을 나누는 습관이 있었다.",
+    "is_filler": 1
+  }
+]

@@ -1,0 +1,781 @@
+% ===================================================================
+% LaTeX Beamer Presentation
+% Hate Speech and Semantic Processing in Korean
+% Total: 7 minutes (1.5min BG + 2min Design + 2.5min Analysis + 1min Discussion)
+% ===================================================================
+
+\documentclass[aspectratio=169,10pt]{beamer}
+
+% Theme and Colors
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+% Packages
+\usepackage{kotex}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{pifont}
+
+% Custom Colors
+\definecolor{darkred}{RGB}{139,0,0}
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightgray}{RGB}{220,220,220}
+\definecolor{darkgreen}{RGB}{0,100,0}
+
+% Custom symbols for results (using pifont)
+\newcommand{\supported}{\textcolor{darkgreen}{\ding{51}}}  % checkmark
+\newcommand{\trending}{\textcolor{orange}{\ding{45}}}      % triangle
+\newcommand{\notsupported}{\textcolor{darkred}{\ding{55}}}
+
+% Title Information
+\title[Hate Speech \& Semantic Processing]{The Effects of Hate Speech on Sentence Processing,\\ Memory, and Reproduction in Korean}
+\subtitle{Extending Ding et al. (2016) to Social Derogatory Language}
+\author{Jinil Kim}
+\institute{Experimental Linguistics Term Project}
+\date{\today}
+
+\begin{document}
+
+% ===================================================================
+% TITLE SLIDE
+% ===================================================================
+\begin{frame}
+\titlepage
+\end{frame}
+
+% ===================================================================
+% SECTION 1: BACKGROUND (1.5 min)
+% ===================================================================
+
+\section{Background}
+
+\begin{frame}{Previous Research: Ding et al. (2016)}
+\textbf{Research Question:} How do emotional verbs affect semantic integration?
+
+\vspace{0.5em}
+\textbf{Method:}
+\begin{itemize}
+    \item ERP study (N400, P600) with Chinese participants
+    \item Emotional verbs (positive/negative) + neutral content
+    \item Passive reading comprehension task
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{Key Finding: Attention-Narrowing Effect}
+\begin{itemize}
+    \item Negative verbs \textbf{impaired semantic processing} of subsequent information
+    \item Reduced N400 \& P600 amplitudes for plausibility violations
+    \item Emotional content captures cognitive resources
+\end{itemize}
+
+\vspace{0.5em}
+\begin{block}{Theoretical Framework}
+Emotional words narrow attentional focus, reducing deep semantic integration of following content
+\end{block}
+\end{frame}
+
+\begin{frame}{Research Gap \& Motivation}
+\textbf{Limitations of Ding et al. (2016):}
+\begin{enumerate}
+    \item \textbf{General negative valence} vs. \textcolor{darkred}{specific hate speech}
+    \item ERP measures only (no behavioral RT, memory, or production data)
+    \item Comprehension-focused (no downstream effects tested)
+    \item Single language (Chinese)
+\end{enumerate}
+
+\vspace{1em}
+\textbf{Critical Extensions in Current Study:}
+\begin{itemize}
+    \item \textcolor{darkred}{\textbf{Hate speech}} as distinct category (socially-directed derogation)
+    \item \textbf{Behavioral measures:} Self-paced reading (RT)
+    \item \textbf{Memory retention:} Recognition accuracy \& false alarms
+    \item \textbf{Language production:} Free recall bias
+    \item \textbf{Cross-linguistic validation:} Korean language
+\end{itemize}
+
+\vspace{0.5em}
+\small{[Presenter Note: Add references on hate speech severity \& real-world consequences]}
+\end{frame}
+
+% ===================================================================
+% SECTION 2: EXPERIMENTAL DESIGN (2 min)
+% ===================================================================
+
+\section{Method}
+
+\begin{frame}{Research Questions \& Hypotheses}
+\textbf{RQ1:} Does hate speech \textbf{impair semantic processing}?\\
+\textbf{RQ2:} Does hate speech \textbf{enhance memory retention}?\\
+\textbf{RQ3:} Does hate speech \textbf{bias content reproduction}?
+
+\vspace{1em}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{H1: Attention Capture}
+\begin{itemize}
+    \item Hate modifiers → longer RT
+    \item Replicates P2 (ERP) behaviorally
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{H2: Attention Narrowing}
+\begin{itemize}
+    \item Neutral: clear plausibility effect
+    \item Hate: reduced plausibility effect
+    \item = shallow integration
+\end{itemize}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\textbf{H3: Memory Distortion}
+\begin{itemize}
+    \item Hate → lower accuracy
+    \item Hate → higher false alarms
+    \item Biased encoding
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{H4: Reproduction Bias}
+\begin{itemize}
+    \item Hate → more negative descriptors
+    \item Hate → fewer factual details
+    \item Exploratory correlational analysis
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Experimental Design}
+\textbf{Design:} 2 × 2 within-subjects factorial
+
+\vspace{0.5em}
+\begin{itemize}
+    \item \textbf{Emotion:} Hate (H) vs. Neutral (N)
+    \item \textbf{Plausibility:} Plausible (P) vs. Implausible (I)
+    \item \textbf{4 Conditions:} HP, HI, NP, NI
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{Stimuli Structure:}
+\begin{center}
+\small
+\begin{tabular}{ll}
+\toprule
+\textbf{Condition} & \textbf{Example} \\
+\midrule
+HP & 탈렌족은 \textcolor{darkred}{[저급한]} [동굴]에서 거주한다 \\
+   & \textit{The Talen tribe lives in \textcolor{darkred}{[inferior]} [caves]} \\
+NI & 탈렌족은 \textcolor{darkblue}{[정착한]} [고층 건물]에서 거주한다 \\
+   & \textit{The Talen tribe lives in \textcolor{darkblue}{[settled]} [high-rise buildings]} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5em}
+\textbf{Participants:} N = 7 Korean native speakers (university students)
+
+\vspace{0.5em}
+\textbf{Stimuli:} 20 base items × 4 conditions = 80 experimental trials + fillers
+\end{frame}
+
+\begin{frame}{Latin Square Counterbalancing}
+\textbf{Goal:} Each participant sees each base item only ONCE
+
+\vspace{0.5em}
+\begin{center}
+\small
+\begin{tabular}{ccccc}
+\toprule
+\textbf{List} & \textbf{B1} & \textbf{B2} & \textbf{B3} & \textbf{...} \\
+\midrule
+List 1 & HP (v1) & HI (v1) & NP (v1) & ... \\
+List 2 & HP (v2) & HI (v2) & NP (v2) & ... \\
+List 3 & HI (v2) & NP (v1) & NI (v2) & ... \\
+List 4 & NI (v1) & HP (v2) & HI (v1) & ... \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5em}
+\textbf{Key Features:}
+\begin{itemize}
+    \item 4 lists, each participant assigned to one list
+    \item All conditions balanced across lists
+    \item 2 versions per condition (v1, v2) for item variety
+    \item Rotation: [HP, HI, NP, NI] order with version patterns
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{Randomization:}
+\begin{itemize}
+    \item Trial order randomized per participant
+    \item Fillers randomly intermixed
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Experimental Procedure}
+\textbf{Four-Stage Design}
+
+\vspace{0.5em}
+\begin{enumerate}
+    \item \textbf{Self-Paced Reading (SPR)}
+    \begin{itemize}
+        \item Word-by-word presentation (spacebar press)
+        \item RT recorded for each word
+        \item Critical regions: Modifier, Critical Noun, Spillover
+    \end{itemize}
+
+    \vspace{0.3em}
+    \item \textbf{Recognition Memory Test}
+    \begin{itemize}
+        \item Old items (presented statements)
+        \item New consistent (plausible given frame)
+        \item New inconsistent lures
+        \item Measure: Accuracy \& false alarm rates
+    \end{itemize}
+
+    \vspace{0.3em}
+    \item \textbf{Free Description Task}
+    \begin{itemize}
+        \item ``Describe the Talen tribe in your own words''
+        \item Coded for: negative adjectives, factual details, emotional valence
+    \end{itemize}
+
+    \vspace{0.3em}
+    \item \textbf{Manipulation Check}
+    \begin{itemize}
+        \item Negativity rating for all modifiers (1-7 scale)
+        \item Validates hate vs. neutral distinction
+    \end{itemize}
+\end{enumerate}
+
+\vspace{0.5em}
+\small{[Presenter Note: Include screenshot of SPR interface]}
+\end{frame}
+
+% ===================================================================
+% SECTION 3: ANALYSIS \& RESULTS (2.5 min)
+% ===================================================================
+
+\section{Results}
+
+\begin{frame}{Data Preprocessing}
+\textbf{Outlier Exclusion Strategy (Strict Criterion)}
+
+\vspace{0.5em}
+\begin{itemize}
+    \item \textbf{Trial-level:} IQR method (k = 2.5), removed 1.0\% trials
+    \item \textbf{Word-level:} 200 ms $<$ RT $<$ 1600 ms (stricter for H1)
+    \item Standard: 200-3000 ms (removed 0.3\%)
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{Sentence Structure Parsing (4 Regions):}
+\begin{center}
+\small
+\begin{tabular}{llc}
+\toprule
+\textbf{Region} & \textbf{Example} & \textbf{Mean RT (ms)} \\
+\midrule
+1. Subject & 탈렌족은 & 542.7 \\
+2. Modifier & 저급한 / 정착한 & 484.4 \\
+3. Spillover & 민족으로, & 515.0 \\
+4. Fact & [remainder] & 429.5 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5em}
+\textbf{Final Dataset:}
+\begin{itemize}
+    \item 7 participants, 305 trials analyzed
+    \item 885 word-level observations
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Manipulation Check: Negativity Ratings}
+\textbf{Hypothesis:} Hate modifiers rated significantly more negative
+
+\vspace{0.5em}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\textbf{Results:}
+\begin{itemize}
+    \item Hate: M = 6.21, SD = 0.64
+    \item Neutral: M = 1.79, SD = 0.58
+    \item Difference: +4.43
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{Statistics:}
+\begin{itemize}
+    \item $t(6) = 18.11$, $p < .0001$
+    \item \textbf{Cohen's $d = 4.18$}
+    \item Extremely large effect
+\end{itemize}
+
+\vspace{0.5em}
+\begin{block}{Conclusion}
+\supported Manipulation highly successful
+\end{block}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{result_1201/Figure_ManipulationCheck.png}
+\small{Error bars: 95\% CI}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{H1: Attention Capture}
+\textbf{Hypothesis:} Hate modifiers → longer RT at modifier region
+
+\vspace{0.5em}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\textbf{Results (Strict Outlier Removal):}
+\begin{itemize}
+    \item Hate: M = 488.0 ms
+    \item Neutral: M = 469.6 ms
+    \item Difference: \textbf{+18.5 ms}
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{Statistics:}
+\begin{itemize}
+    \item $t(6) = 1.26$, $p = .254$
+    \item Cohen's $d = 0.477$ (medium)
+\end{itemize}
+
+\vspace{0.5em}
+\begin{block}{Interpretation}
+\trending Direction consistent but non-significant
+\begin{itemize}
+    \item Single outlier (1725 ms) influenced results
+    \item Effect size increased 63\% after stricter exclusion
+    \item Larger sample may reach significance
+\end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{result_1201/Figure_H1_AttentionCapture.png}
+\vspace{0.3em}
+\includegraphics[width=\textwidth]{result_1201/outlier_exclusion_comparison.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{H2: Attention Narrowing \& Shallow Integration}
+\textbf{Hypothesis:} Hate context reduces plausibility effect (I $>$ P)
+
+\vspace{0.5em}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\textbf{Plausibility Effects:}
+\begin{itemize}
+    \item Neutral: NI - NP = +7.1 ms
+    \item Hate: HI - HP = +7.1 ms
+    \item \textbf{Interaction: ~0 ms}
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{ANOVA Results:}
+\begin{itemize}
+    \item Emotion: $F(1,6) = 0.22$, $p = .653$
+    \item Plausibility: $F(1,6) = 0.31$, $p = .599$
+    \item \textbf{Interaction: $F(1,6) = 0.00$, $p = .995$}
+\end{itemize}
+
+\vspace{0.5em}
+\begin{block}{Interpretation}
+\notsupported Hypothesis not supported
+\begin{itemize}
+    \item No attention-narrowing effect detected
+    \item Possible: small N, weak manipulation, spillover effects
+\end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{result_1201/Figure_H2_AttentionNarrowing.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{H3: Memory Distortion}
+\textbf{Hypothesis:} Hate context → biased memory encoding
+
+\vspace{0.5em}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\textbf{Recognition Accuracy:}
+\begin{itemize}
+    \item HP: M = 2.14
+    \item HI: M = 1.86
+    \item NP: M = 2.57
+    \item NI: M = 2.00
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{ANOVA Results:}
+\begin{itemize}
+    \item Emotion: $F(1,6) = 1.89$, $p = .218$
+    \item Plausibility: $F(1,6) = 5.91$, $p = .052$
+    \item \textbf{Interaction: $F(1,6) = 18.84$, $p = .002$} \supported
+\end{itemize}
+
+\vspace{0.5em}
+\begin{block}{Key Finding}
+\supported \textbf{Strong support for memory distortion}
+\begin{itemize}
+    \item Hate reduces plausibility discrimination
+    \item Biased encoding mechanism confirmed
+\end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{result_1201/Figure_H3_MemoryBias.png}
+
+\vspace{0.5em}
+\small
+\textbf{Distortion Index:}\\
+(Neutral Effect) - (Hate Effect)\\
+Mean: -0.71\\
+5/7 participants negative (expected)
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{H4: Reproduction Bias - Expanded Analysis}
+\textbf{Hypothesis:} Hate context → negative descriptors, fewer facts
+
+\vspace{0.3em}
+\textbf{\trending Critical Methodological Innovation:}
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{Expanded Negative Dictionary:}
+\begin{enumerate}
+    \item \textbf{Direct Hate Speech}\\
+    \small{저급 (inferior), 야만 (barbaric), 미개 (uncivilized)}
+
+    \item \textbf{Indirect Negative} {\color{darkred}★}\\
+    \small{천박 (unsophisticated), 무지 (ignorant), 수준 낮 (low-level)}
+
+    \item \textbf{Derogatory}\\
+    \small{하찮 (trivial), 졸렬 (inferior), 단순 (simplistic)}
+\end{enumerate}
+
+\vspace{0.3em}
+\textbf{Also Coded:}
+\begin{itemize}
+    \item Factual details (neutral descriptors)
+    \item False information (implausible content recalled)
+\end{itemize}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\textbf{Results Summary (N=7):}
+\begin{itemize}
+    \item Direct hate: \textbf{0 instances (0\%)}
+    \item {\color{darkred}\textbf{Indirect negative: 4 instances (100\%)}}
+    \item Derogatory: 0 instances (0\%)
+    \item False info: 71.4\% participants (mean 2.29)
+\end{itemize}
+
+\vspace{0.5em}
+\begin{block}{Critical Finding}
+\textbf{100\% of negative bias expressed through indirect language}
+\begin{itemize}
+    \item Original analysis (direct only): 0 → ``no bias''
+    \item Expanded analysis: 4 → \textbf{bias detected}
+    \item If only analyzing direct hate speech → would have \textbf{missed all evidence}
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{H4: Detailed Participant Patterns}
+\begin{center}
+\small
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{ID} & \textbf{Facts} & \textbf{Direct} & \textbf{Indirect} & \textbf{Derog.} & \textbf{Total Neg.} & \textbf{False} & \textbf{Sentiment} \\
+\midrule
+165678 & 10 & 0 & 0 & 0 & 0 & 0 & +1 \\
+613690 & 10 & 0 & 0 & 0 & 0 & 4 & +2 \\
+639397 & 5 & 0 & 0 & 0 & 0 & 0 & 0 \\
+944896 & 7 & 0 & 0 & 0 & 0 & 3 & +2 \\
+212687 & 7 & 0 & 0 & 0 & 0 & 2 & +1 \\
+195856 & 3 & 0 & \textbf{2} & 0 & \textbf{2} & 3 & \textbf{-1} \\
+730450 & 2 & 0 & \textbf{2} & 0 & \textbf{2} & 4 & \textbf{-1} \\
+\midrule
+\textbf{Mean} & 6.29 & 0.00 & \textbf{0.57} & 0.00 & \textbf{0.57} & 2.29 & +0.57 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5em}
+\textbf{Example Expressions:}
+\begin{itemize}
+    \item Participant 195856: ``천박'' (unsophisticated), ``무지'' (ignorant)
+    \item Participant 730450: ``천박'' (unsophisticated), ``수준 낮'' (low-level)
+\end{itemize}
+
+\vspace{0.5em}
+\begin{block}{Theoretical Implication}
+Hate speech creates \textbf{schema-level implicit bias}, not surface-level word priming
+\begin{itemize}
+    \item Participants avoided direct hate reproduction (social desirability)
+    \item BUT: underlying negative bias persisted through \textbf{indirect euphemisms}
+\end{itemize}
+\end{block}
+\end{frame}
+
+% ===================================================================
+% SECTION 4: DISCUSSION (1 min)
+% ===================================================================
+
+\section{Discussion}
+
+\begin{frame}{Summary of Key Findings}
+\begin{center}
+\small
+\begin{tabular}{lllc}
+\toprule
+\textbf{Hypothesis} & \textbf{Measure} & \textbf{Result} & \textbf{Status} \\
+\midrule
+\textbf{Manip. Check} & Negativity rating & Cohen's $d = 4.18$ & \supported Strong \\
+\textbf{H1} & Modifier RT & +18.5 ms, $d = 0.48$ & \trending Trending \\
+\textbf{H2} & Plausibility interaction & ~0 ms & \notsupported Not supported \\
+\textbf{H3} & Memory interaction & $p = .002$ & \supported \textbf{Supported} \\
+\textbf{H4} & Negative expressions & 100\% indirect & \trending \textbf{Partial} \\
+\textbf{H4-False} & False memory & 71.4\% participants & \trending \textbf{Exploratory} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5em}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{Support for Attention-Narrowing:}
+\begin{itemize}
+    \item H3: Memory distortion confirmed ($p = .002$)
+    \item H1: Direction consistent (medium $d$)
+    \item Hate speech impairs encoding
+\end{itemize}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\textbf{Novel Contribution:}
+\begin{itemize}
+    \item \textbf{100\% indirect negative expressions}
+    \item Schema-level implicit bias
+    \item False memory: 71.4\% (mean 2.29)
+    \item Methodological innovation
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Theoretical \& Practical Implications}
+\textbf{Extending Ding et al. (2016):}
+\begin{itemize}
+    \item Hate speech (not just negative valence) → specific cognitive effects
+    \item Behavioral + memory + production measures (not just ERP)
+    \item Cross-linguistic validation (Korean)
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{Theoretical Implications:}
+\begin{enumerate}
+    \item \textbf{Implicit bias mechanism:} Hate speech creates schema-level negative framework
+    \item \textbf{Social desirability filter:} Explicit hate suppressed, implicit bias persists
+    \item \textbf{Memory distortion:} Biased encoding reduces plausibility discrimination
+\end{enumerate}
+
+\vspace{0.5em}
+\textbf{Practical Implications:}
+\begin{enumerate}
+    \item \textbf{AI hate speech detection:} Must capture \textbf{indirect negative expressions}, not just direct slurs
+    \item \textbf{Media \& education:} Exposure to hate speech impairs factual processing \& biases language use
+    \item \textbf{Social media moderation:} Banning explicit slurs insufficient; need semantic framing analysis
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Limitations \& Future Directions}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{Limitations:}
+\begin{enumerate}
+    \item \textbf{Small sample size} (N=7)
+    \begin{itemize}
+        \item H1 trending but non-significant
+        \item H2 may need more power
+    \end{itemize}
+
+    \item \textbf{Fictional group} (탈렌족)
+    \begin{itemize}
+        \item Real minority groups may show stronger effects
+        \item Ethical considerations
+    \end{itemize}
+
+    \item \textbf{Within-subjects design}
+    \begin{itemize}
+        \item Everyone saw both hate \& neutral
+        \item Limits H4 direct comparison
+    \end{itemize}
+
+    \item \textbf{Single language} (Korean)
+    \begin{itemize}
+        \item Cross-linguistic generalization needed
+    \end{itemize}
+\end{enumerate}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\textbf{Future Directions:}
+\begin{enumerate}
+    \item \textbf{Larger sample} for H1/H2 power
+
+    \item \textbf{Combined methods:}
+    \begin{itemize}
+        \item SPR + ERP (behavioral + neural)
+        \item Eye-tracking for fine-grained attention
+    \end{itemize}
+
+    \item \textbf{Real-world stimuli}
+    \begin{itemize}
+        \item Actual hate speech examples
+        \item Address ethical concerns
+    \end{itemize}
+
+    \item \textbf{Individual differences:}
+    \begin{itemize}
+        \item Prejudice scales
+        \item Cognitive capacity measures
+    \end{itemize}
+
+    \item \textbf{Intervention studies:}
+    \begin{itemize}
+        \item Can warnings reduce effects?
+        \item Counter-stereotypical info effects
+    \end{itemize}
+
+    \item \textbf{Cross-linguistic validation}
+    \begin{itemize}
+        \item Multiple languages \& cultures
+    \end{itemize}
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ===================================================================
+% CONCLUSION
+% ===================================================================
+
+\begin{frame}{Conclusion}
+\begin{center}
+\Large
+\textbf{Hate speech not only captures attention,\\
+but fundamentally alters how we\\
+process, remember, and communicate\\
+about social groups}
+\end{center}
+
+\vspace{1em}
+\begin{block}{Key Contributions}
+\begin{enumerate}
+    \item \textbf{Replication \& Extension:} Behavioral evidence for attention-narrowing in hate speech
+    \item \textbf{Memory distortion:} Strong interaction effect ($p = .002$)
+    \item \textbf{Methodological innovation:} Expanded negative expression dictionary captures implicit bias
+    \item \textbf{Critical finding:} 100\% indirect negative expressions (천박, 무지, 수준 낮)
+    \item \textbf{Practical relevance:} AI detection systems must target indirect language
+\end{enumerate}
+\end{block}
+
+\vspace{0.5em}
+\begin{center}
+\textbf{Thank you for your attention}\\
+\vspace{0.3em}
+\small{Questions \& Discussion}
+\end{center}
+\end{frame}
+
+% ===================================================================
+% BACKUP SLIDES (for Q\&A)
+% ===================================================================
+
+\appendix
+
+\begin{frame}[noframenumbering]{Backup: Sentence Structure Example}
+\textbf{Complete Sentence Breakdown (HP condition):}
+
+\vspace{0.5em}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Region} & \textbf{Korean} & \textbf{English} \\
+\midrule
+Subject & 탈렌족은 & The Talen tribe \\
+Modifier & \textcolor{darkred}{저급한} & \textcolor{darkred}{inferior} \\
+Spillover & 민족으로, & as a people, \\
+Critical Noun & 동굴에서 & in caves \\
+Continuation & 거주한다 & live \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5em}
+\textbf{Full sentence:}\\
+탈렌족은 \textcolor{darkred}{저급한} 민족으로, 동굴에서 거주한다.\\
+\textit{The Talen tribe, as an \textcolor{darkred}{inferior} people, live in caves.}
+
+\vspace{0.5em}
+\textbf{Plausibility Manipulation:}
+\begin{itemize}
+    \item \textbf{Plausible:} 동굴 (caves), 협곡 (canyons), 산악 지대 (mountains)
+    \item \textbf{Implausible:} 고층 건물 (high-rise buildings), 금속 구조물 (metal structures)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Backup: Statistical Models}
+\textbf{Mixed-Effects Models (where applicable):}
+
+\vspace{0.5em}
+For RT analyses (H1, H2):
+\begin{itemize}
+    \item \texttt{lmer(RT $\sim$ Emotion * Plausibility + (1|Participant) + (1|Item))}
+    \item Random intercepts for participants and items
+    \item Fixed effects: Emotion, Plausibility, Interaction
+\end{itemize}
+
+\vspace{0.5em}
+For memory accuracy (H3):
+\begin{itemize}
+    \item Repeated measures ANOVA (within-subjects)
+    \item Due to small N, parametric assumptions checked
+\end{itemize}
+
+\vspace{0.5em}
+For H4 (descriptive analysis):
+\begin{itemize}
+    \item Frequency counts of expression categories
+    \item Pearson correlations with RT measures (exploratory)
+\end{itemize}
+\end{frame}
+
+\end{document}

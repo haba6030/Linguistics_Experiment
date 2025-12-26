@@ -1,0 +1,14 @@
+
+STATISTICAL RESULTS SUMMARY TABLE
+====================================================================================================
+                                    Test                                   Measure             Effect_Size Test_Statistic P_Value Cohens_d          Result
+                      Manipulation Check        Negativity Rating (Hate - Neutral)            +2.50 points      t = 25.43 < .0001     4.33   ✅ SIGNIFICANT
+     H1: Attention Capture (Modifier RT)           RT at Modifier (Hate - Neutral)                +12.4 ms      z = -0.57    .569    ~0.05   ⚠️ NS (trend)
+               H2: Main Effect - Emotion    RT at Critical Region (Hate - Neutral)                 -9.9 ms      z = -0.75    .452        -            ❌ NS
+          H2: Main Effect - Plausibility   RT at Critical Region (Implaus - Plaus) -15.7 ms (in Hate cond)      z = -1.20    .230        -            ❌ NS
+H2: Interaction (Emotion × Plausibility)         Difference in Plausibility Effect                +24.3 ms       z = 1.27    .204        - ❌ NS (opposite)
+              Secondary: Manipulation RT RT for Negativity Rating (Hate - Neutral)                +1651 ms       t = 0.98    .331        -            ❌ NS
+====================================================================================================
+
+NS = Not Significant
+✅ = Significant, ⚠️ = Marginal/Trend, ❌ = Not Supported

@@ -1,0 +1,4 @@
+Strategy,N Obs,N Subj,Mean (ms),SD (ms),Min (ms),Max (ms),% Retained
+No Exclusion,"9,600",30,435,417,50,3997,100.0%
+Standard (100-3000ms),"9,228",30,407,243,161,2984,96.1%
+Stricter (±2.5 SD),"9,220",30,386,154,53,3323,96.0%
