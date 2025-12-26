@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, landscape, margin=0.5in]{geometry}
+\usepackage{kotex}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+
+\begin{document}
+
+\section*{Stimuli Structure: Example Item (B1)}
+
+본 실험의 자극은 다음과 같은 구조를 갖는다:
+
+\begin{itemize}
+\item \textbf{Subject}: 탈렌족은
+\item \textbf{Modifier}: 감정가(H: 혐오/경멸 vs. N: 중립) 형용사
+\item \textbf{Spillover}: ``민족으로,'' 부분
+\item \textbf{Fact}: 진술 본문 (P: 그럴듯함 vs. I: 비그럴듯함)
+\end{itemize}
+
+\vspace{1em}
+
+\begin{longtable}{p{2.5cm}p{2cm}p{2.8cm}p{14cm}}
+\toprule
+\textbf{Condition} & \textbf{Emotion} & \textbf{Plausibility} & \textbf{Stimulus Sentence (Structure Marked)} \\
+\midrule
+\endfirsthead
+
+\multicolumn{4}{c}{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\toprule
+\textbf{Condition} & \textbf{Emotion} & \textbf{Plausibility} & \textbf{Stimulus Sentence (Structure Marked)} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{4}{r}{\textit{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+HP & H & P &
+\textbf{[Subject]} 탈렌족은 \textbf{[Modifier]} 미개한 \textbf{[Spillover]} 민족으로, \textbf{[Fact]} 가파른 산지에 흙과 돌을 섞어 만든 반지하식 집에 거주하였다. \\
+\addlinespace
+
+HI & H & I &
+\textbf{[Subject]} 탈렌족은 \textbf{[Modifier]} 저급한 \textbf{[Spillover]} 민족으로, \textbf{[Fact]} 사막 한가운데 세워진 금속 고층 건물에서 생활하였다. \\
+\addlinespace
+
+NP & N & P &
+\textbf{[Subject]} 탈렌족은 \textbf{[Modifier]} 고립된 \textbf{[Spillover]} 민족으로, \textbf{[Fact]} 가파른 산지에 흙과 돌을 섞어 만든 반지하식 집에 거주하였다. \\
+\addlinespace
+
+NI & N & I &
+\textbf{[Subject]} 탈렌족은 \textbf{[Modifier]} 폐쇄적 \textbf{[Spillover]} 민족으로, \textbf{[Fact]} 사막 한가운데 세워진 금속 고층 건물에서 지낸다고 기록되었다. \\
+
+\end{longtable}
+
+\vspace{1em}
+
+\subsection*{구조 설명}
+
+\begin{itemize}
+\item \textbf{Subject (주어)}: 모든 문장에서 동일 --- ``탈렌족은''
+\item \textbf{Modifier (수식어)}: 감정가 조작 구간
+  \begin{itemize}
+  \item H (Hate): 미개한, 저급한 등의 경멸적 형용사
+  \item N (Neutral): 고립된, 폐쇄적 등의 중립적 형용사
+  \end{itemize}
+\item \textbf{Spillover (넘김 구간)}: ``민족으로,'' --- Modifier 효과의 지연 측정
+\item \textbf{Fact (진술 본문)}: 그럴듯함 조작 구간
+  \begin{itemize}
+  \item P (Plausible): 산지에 흙집 거주 --- 현실적이고 그럴듯한 내용
+  \item I (Implausible): 사막에 금속 고층 건물 --- 비현실적이고 비그럴듯한 내용
+  \end{itemize}
+\end{itemize}
+
+\subsection*{Latin Square 설계}
+
+각 참가자는 20개의 base item (B1--B20)을 모두 보지만, 각 base는 4개 조건 중 \textbf{단 한 가지 조건}으로만 제시된다. 4개의 리스트(List 1--4)에 걸쳐 모든 조건이 균형 있게 배치되어 있다.
+
+\end{document}
